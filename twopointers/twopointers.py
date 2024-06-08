@@ -1,3 +1,5 @@
+import linkedlist.list
+import linkedlist.Node as Node
 class TwoPointers:
   def __init__(self):
     pass
@@ -26,9 +28,18 @@ class TwoPointers:
         else:
           high -=1
     return False
-    
+  
 
+      
 if __name__ == "__main__":
   twoPointers = TwoPointers()
-  print(twoPointers.validPallindrome("raceacar"))
-  print(twoPointers.find_sum_of_three([0,1,3,8,12],12))
+  list = linkedlist.list.LinkedList()
+  
+  response = twoPointers.removeNthFromEndOfTheList(list.head, 6)
+  while response.next != None:
+    print(response.next)
+    response = response.next
+    
+  
+  # print(twoPointers.validPallindrome("raceacar"))
+  # print(twoPointers.find_sum_of_three([0,1,3,8,12],12))
